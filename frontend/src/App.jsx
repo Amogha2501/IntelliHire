@@ -60,8 +60,8 @@ function App() {
                         {/* Top Navigation */}
                         <nav className="absolute top-0 left-0 w-full p-6 md:px-12 z-40 flex justify-between items-center">
                             <div className="flex items-center gap-3 group cursor-pointer">
-                                <div className="w-12 h-12 border border-white/20 rounded-xl flex items-center justify-center backdrop-blur-md shadow-[0_0_20px_rgba(255,255,255,0.1)] group-hover:shadow-[0_0_35px_rgba(255,255,255,0.3)] transition-all overflow-hidden">
-                                    <img src={appLogo} alt="Logo" className="w-full h-full object-cover" />
+                                <div className="w-14 h-14 border border-white/40 rounded-2xl flex items-center justify-center shadow-[0_4px_20px_rgba(0,0,0,0.4)] group-hover:shadow-[0_4px_25px_rgba(168,85,247,0.4)] transition-all bg-white overflow-hidden">
+                                    <img src={appLogo} alt="Logo" className="w-11 h-11 object-contain px-1 group-hover:scale-110 transition-all duration-300" />
                                 </div>
                                 <span className="text-2xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-white to-indigo-200">
                                     IntelliHire
@@ -190,14 +190,16 @@ function App() {
                     <div className="max-w-7xl mx-auto px-4 py-10 min-h-screen flex flex-col w-full flex-1">
                         <header className="mb-10 flex-shrink-0 flex flex-col items-start w-full gap-4">
                             <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }}>
-                                <div className="inline-flex items-center p-3 px-5 bg-slate-900/60 rounded-2xl backdrop-blur-md border border-white/10 shadow-2xl cursor-pointer" onClick={() => setStarted(false)}>
-                                    <img src={appLogo} alt="Logo" className="w-10 h-10 rounded-lg mr-4 border border-white/20 shadow-[0_0_10px_rgba(255,255,255,0.1)] object-cover" />
+                                <div className="inline-flex items-center p-3 px-5 bg-slate-900/60 rounded-2xl backdrop-blur-md border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.5)] cursor-pointer group" onClick={() => setStarted(false)}>
+                                    <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mr-4 border border-white/40 shadow-[0_0_15px_rgba(34,211,238,0.2)] group-hover:shadow-[0_0_20px_rgba(34,211,238,0.5)] overflow-hidden shrink-0 transition-all duration-300">
+                                        <img src={appLogo} alt="Logo" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-300" />
+                                    </div>
                                     <div>
                                         <h1 className="text-2xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-purple-400 tracking-tight leading-tight">
                                             IntelliHire
                                         </h1>
                                         <p className="text-indigo-200/60 text-xs font-semibold flex items-center gap-1">
-                                            <Sparkles className="w-3 h-3" /> AI Analysis
+                                            <Sparkles className="w-3 h-3" /> Multi-Agent AI Evaluation
                                         </p>
                                     </div>
                                 </div>
