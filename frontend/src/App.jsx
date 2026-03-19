@@ -22,7 +22,7 @@ function App() {
         setTimeout(() => dashboardRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
 
         try {
-            const response = await fetch('http://localhost:5000/api/evaluate', {
+            const response = await fetch('https://intellihire-sqry.onrender.com/api/evaluate', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data),

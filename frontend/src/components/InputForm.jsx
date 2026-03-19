@@ -21,7 +21,7 @@ function InputForm({ onSubmit, loading }) {
         formData.append('resumePdf', file);
 
         try {
-            const response = await fetch('http://localhost:5000/api/parse-pdf', {
+            const response = await fetch('https://intellihire-sqry.onrender.com/api/parse-pdf', {
                 method: 'POST',
                 body: formData,
             });
