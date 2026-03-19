@@ -1,0 +1,17 @@
+{
+  "name": "autonomous-interview-panel-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Interview Panel",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@google/genai": "^1.46.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^4.22.1",
+    "multer": "^2.1.1",
+    "pdf-parse": "^1.1.1"
+  }
+}
