@@ -1,106 +1,180 @@
-🎯 **IntelliHire – Autonomous AI Interview Panel**
+# 🎯 IntelliHire – Autonomous AI Interview Panel
 
-A real-time, multi-agent AI platform that simulates a human hiring committee to evaluate candidates with intelligence, transparency, and zero bias.
-
----
-
-🚀 **Overview**
-
-IntelliHire redefines technical hiring by going beyond keyword-based evaluation.
-Instead of simply checking answers, it **thinks like a real interview panel**, analyzing depth, consistency, and practical understanding.
-
-The system processes:
-
-* Resume (PDF/Text)
-* Interview Transcript
-* Job Description
-* Available Roles
-
-to deliver **accurate, explainable hiring decisions**.
+> **AI-powered hiring panel that thinks, debates, and decides like real recruiters.**
 
 ---
 
-🧠 **Core Features**
+## 🚀 Overview
 
-🔹 **Resume Intelligence**
+**IntelliHire** is a real-time, multi-agent AI platform that simulates a human interview panel to evaluate candidates intelligently and without bias.
 
-* Extracts skills, experience, and key claims
-* Builds a structured understanding of candidate profile
+Unlike traditional AI tools that rely on keyword matching, IntelliHire focuses on **deep understanding, reasoning, and consistency analysis** to deliver accurate hiring decisions.
 
-🔹 **Transcript Analysis**
+---
+
+## 🧠 Key Features
+
+### 🔹 Resume Understanding
+
+* Extracts skills and experience from text or PDF resumes
+* Identifies key claims for verification
+
+### 🔹 Transcript Analysis
 
 * Evaluates correctness, depth, and clarity
-* Detects vague or surface-level answers
+* Detects vague or shallow answers
 
-🔹 **Bluff Detection Engine (Key Innovation)**
+### 🔹 ⚠️ Bluff Detection Engine (Core Innovation)
 
-* Cross-checks resume claims with actual answers
-* Flags contradictions and overstated expertise
-* Ensures authenticity in candidate evaluation
+* Compares resume claims with interview performance
+* Flags contradictions and exaggerated skills
 
-🔹 **Skill-Based Scoring**
+### 🔹 📊 Skill-Based Scoring
 
-* DSA
+* Data Structures & Algorithms
 * Backend Systems
 * Databases
 * Communication
 
-Each scored with precision (0–100)
+---
+
+## 🤖 Multi-Agent AI Panel
+
+Simulates a real hiring committee:
+
+* 💻 **Tech Lead** → evaluates technical depth
+* 🤝 **HR Agent** → evaluates communication
+* ⚖️ **System Evaluator** → detects inconsistencies
+
+👉 Agents “debate” before giving a final decision.
 
 ---
 
-🤖 **Multi-Agent AI Panel**
+## 🎯 Decision Output
 
-IntelliHire simulates a real hiring committee:
-
-* 💻 **Tech Lead** → Evaluates technical depth
-* 🤝 **HR Agent** → Evaluates communication & clarity
-* ⚖️ **System Evaluator** → Detects inconsistencies & finalizes decision
-
-⚡ Agents debate and challenge each other before reaching a final verdict.
-
----
-
-🎯 **Decision Intelligence**
-
-Instead of just scoring, the system provides:
-
-* ✅ Final Verdict (HIRE / NO HIRE)
+* ✅ HIRE / NO HIRE
 * 📊 Confidence Score
-* 📌 Detailed reasoning
-
-  * Critical mistakes
-  * Contradictions
-  * Strengths
+* 📌 Detailed reasoning (mistakes, strengths, contradictions)
 
 ---
 
-🔄 **Smart Role Recommendation**
+## 🔄 Smart Role Recommendation
 
-Not a fit? No problem.
-
-* Suggests alternative roles
-* Calculates match percentage
-* Provides reasoning for redirection
+* Suggests alternative roles if candidate is not a fit
+* Provides match percentage and reasoning
 
 ---
 
-🛠️ **Design Philosophy**
+## 🛠️ Tech Stack
+
+* **Frontend:** React (Vite), Tailwind CSS, Framer Motion
+* **Backend:** Node.js, Express.js
+* **AI Integration:** Google Gemini API (`@google/genai`)
+* **PDF Parsing:** pdf-parse
+* **Deployment:** Render
+
+---
+
+## 💻 Setup Instructions
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/Amogha2501/IntelliHire.git
+cd IntelliHire
+```
+
+---
+
+### 2️⃣ Install Dependencies
+
+```bash
+# Root
+npm install
+
+# Backend
+cd backend
+npm install
+cd ..
+
+# Frontend
+cd frontend
+npm install
+cd ..
+```
+
+---
+
+### 3️⃣ Environment Variables
+
+Create `.env` inside `/backend`:
+
+```env
+GEMINI_API_KEY=your_api_key_here
+PORT=5000
+```
+
+---
+
+### 4️⃣ Run Project
+
+```bash
+npm run dev
+```
+
+---
+
+## 🌐 Live Demo
+
+* Frontend: https://intellihire-frontend-7apu.onrender.com/
+* Backend: https://intellihire-sqry.onrender.com
+
+---
+
+## 🎨 Features Showcase
+
+* ✨ Premium UI with glassmorphism design
+* 📄 PDF resume upload
+* ⚡ Real-time AI evaluation
+* 🤖 Multi-agent reasoning system
+
+---
+
+## ⚖️ Design Philosophy
 
 * 🚫 No video → eliminates bias
-* 🧠 Deep reasoning > shallow scoring
-* ⚡ Built for real-time evaluation
+* 🧠 Focus on reasoning over memorization
+* ⚡ Real-time evaluation capability
 
 ---
 
-💻 **Tech Stack**
+## 🧩 Challenges Solved
 
-* Backend: Node.js, Express, Google Gemini
-* Frontend: React, Tailwind CSS, Framer Motion
+* Detecting shallow vs deep understanding
+* Identifying resume exaggeration
+* Simulating real interview panel decisions
+* Making hiring more fair and explainable
 
 ---
 
-✨ **Why IntelliHire?**
+## 🙌 Credits
 
-Because hiring shouldn’t be about memorized answers —
-it should be about **true understanding, consistency, and real-world thinking.**
+* Developed by: CodeStorm
+* Contributors:Amogha H Shetty, Raksha P R, Ashika P M, Anisha Rao
+
+---
+
+## 📚 References
+
+* Google Gemini API Documentation
+* React Documentation
+* Node.js & Express Documentation
+* Tailwind CSS Docs
+* Framer Motion Docs
+* Render Deployment Docs
+
+---
+
+## 🏆 Conclusion
+
+IntelliHire transforms hiring from simple answer checking into **intelligent, reasoning-driven evaluation**, making recruitment more reliable, fair, and aligned with real-world interview practices.
