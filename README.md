@@ -92,10 +92,25 @@ cd ..
 
 # 4. Start the Application
 npm run dev
-```
+### Environment Variables Setup
 
-*Note: You must create a `.env` file inside the `backend/` folder and insert your `GEMINI_API_KEY` for the AI evaluation engine to boot.*
+The backend relies on the Google Gemini API for its intelligent document parsing. You **must** configure your environment variables for it to work.
+
+1. Navigate to the `backend/` directory.
+2. Create a new file named `.env`.
+3. Add your Gemini API key inside the `.env` file like this:
+
+```env
+GEMINI_API_KEY=your_actual_api_key_here
+PORT=5000
+```
+*(Note: Do not commit your `.env` file! It is already added to `.gitignore` to keep your keys safe).*
 
 ---
 
-**Final Note to Judges:** This is not a simple scoring system. It is a highly intelligent decision-making system designed to replicate deeply analytical human hiring processes from the ground up.
+## ✨ Recent Upgrades
+- **Premium UI/UX:** Stunning Dark-mode Glassmorphism UI via Tailwind CSS, complete with ambient glows, smooth animations, and an intuitive Drag-and-Drop resume upload zone.
+- **Enhanced AI Logic:** The core evaluation engine now features strict word-boundary analysis and complex rulesets for modern tech (AWS, REST APIs, Python, Agile), enabling precise `"STRONG HIRE"` or `"NO HIRE"` outcomes with detailed percentage-based skill breakdowns!
+
+---
+
