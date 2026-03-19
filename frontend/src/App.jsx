@@ -4,7 +4,7 @@ import { Bot, Sparkles, ArrowRight, Info, X, Shield, Activity, BrainCircuit } fr
 import InputForm from './components/InputForm';
 import ResultDashboard from './components/ResultDashboard';
 import bgImage from './Interview.png';
-import appLogo from './Logo.jpeg';
+import appLogo from './logo.png';
 
 function App() {
     const [started, setStarted] = useState(false);
